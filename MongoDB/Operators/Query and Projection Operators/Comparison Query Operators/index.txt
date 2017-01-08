@@ -1,0 +1,17 @@
+1) $eq
+2) $gte
+3) $lt
+4) $lte
+5) $ne
+6) $in
+7) $nin
+
+	1)	db.activities.find({tags:{$eq:"Google Sheets"}})
+	2)  db.activities.find({flowplan:{$gte:100}})
+	3)	db.activities.find({flowpaln:{$lte:100}})
+	4)	db.activities.find({flowpaln:{$lt:1000}})
+	5)	db.activities.find({tags:{$ne:"Google Sheets"}})
+	6)	db.activities.find({tags:{$ne:"Google Sheets"}})
+	7)  db.activities.find({tags:{$in:["Google Sheets","Google Task"]}	})
+	8)	db.activities.find({tags:{$nin:["Google Sheets","Google Tasks"]}})
+	
