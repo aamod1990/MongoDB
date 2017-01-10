@@ -1,3 +1,14 @@
+1)	$or
+2)	$and
+3)	$not
+4)	$nor
 
+	1)db.activitis.find({$or:[{tags:{$eq:"Google Sheet"}}, {tags:{$eq:"Google Sheets"}}]})
 
+	2)db.activities.find({$and:[{tags:{$eq:"Google Sheets"}},{name:{$eq:"google-sheets-get"}}]})
 
+	3)db..activities.find({tags:{$not:{$eq:"Google Sheet"}}})
+
+	4)db.activities.find({$nor:[{tags:{$ne:"Google Shhets"}}]})
+
+	
