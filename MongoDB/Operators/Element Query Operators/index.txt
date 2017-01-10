@@ -1,0 +1,5 @@
+1) $exists
+2) $$type
+
+	db.activities.find({tags:{$exists:true}})
+	db.activities.find({tags:{$type:"string"}})
